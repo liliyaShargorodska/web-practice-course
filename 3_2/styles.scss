@@ -1,0 +1,14 @@
+$primary-color: #ff6600;
+h1 {
+  color: $primary-color;
+}
+a {
+  color: $primary-color;
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
+$size: 24px;
+p {
+  font-size: $size;
+}
