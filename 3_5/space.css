@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aqua;
+}
+
+.space {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.card-wrap {
+  display: flex;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.img-planet {
+  flex: 1;
+  height: 100%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-planet {
+  flex: 1;
+  max-width: 50%;
+  background-color: white;
+}
+.text-planet h3 {
+  display: block;
+  text-align: center;
+}
+
+.text-planet p {
+  line-height: 1.6;
+  text-align: justify;
+  padding: 10px;
+}
+footer {
+  background-color: grey;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .space {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: baseline;
+  }
+  .item {
+    margin-bottom: 20px;
+  }
+  .card-wrap {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .img-planet,
+  .text-planet {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
