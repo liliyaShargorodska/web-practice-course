@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя веб-сторінка з Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" id="change">
+          <h2>Тварини</h2>
+          <p>
+            Твари́ни, Животи́ни (лат. Animalia або Metazoa) — царство переважно багатоклітинних еукаріотичних (ядерних)
+            організмів, однією з найголовніших ознак якого є гетеротрофність (тобто, споживання готових органічних речовин)
+            та здатність активно рухатись. До царства тварин не належать рослини та гриби — теж великі (але не єдині)
+            царства еукаріотів.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h2>Рослини</h2>
+          <p>
+            Рослини — це організми, яким властиві живлення, розмноження, ріст і розвиток.Здатність рухатися — важлива ознака
+            всіх живих організмів. Не є винятком і рослини. Коли вони ростуть і розвиваються, вони рухаються, повертають своє
+             листя і квітки до сонця. Для живлення рослинам потрібні сонячне світло, повітря, вода і поживні речовини з ґрунту.
+             Рослина складається з частин, які називають органами. Кожен орган має свою назву: корінь, стебло, листок, квітка,
+             плід з насінням. Починати розгляд і називати органи рослини потрібно з кореня.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Стовпець 1</h2>
+        <button type="button" class="btn btn-primary" onclick="changeColor()">Натисніть мене</button>
+      </div>
+      <div class="col-md-6">
+        <h2>Стовпець 2</h2>
+        <div class="card">
+          <img src="./flovers.jpeg" class="card-img-top" alt="Карточка">
+          <div class="card-body">
+            <h5 class="card-title">Квіти</h5>
+            <p class="card-text">Оригінальні та прекрасні, квіти вражають нас своєю красою, ніжністю та неповторністю ароматів.
+              Мабуть, немає у світі людини, яка з впевненістю може сказати: я не люблю квітів. А як щодо Тебе?</p>
+            <a href="https://ukr.media/science/346273/" class="btn btn-secondary">Дізнатися більше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function changeColor() {
+      const text = document.getElementById('change');
+      text.style.color = "blue";
+      setTimeout(function() {
+        text.style.color = "black";
+      },3000);
+    }
+
+  </script>
+
+  </body>
+</html>
