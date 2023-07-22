@@ -4,28 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Селектори та специфічність CSS</title>
-    <style>
-      p {
-          font-family: Arial, sans-serif;
-      }
+    <link rel="stylesheet" href="selectors.css">
 
-      .main-heading {
-          font-size: 2rem;
-      }
-
-      #example {
-          text-decoration: underline;
-      }
-
-      .highlight {
-          background-color: yellow;
-      }
-
-      section > h2 {
-          color: blue;
-      }
-
-    </style>
 </head>
 <body>
   <header>
@@ -35,8 +15,75 @@
     <section>
         <h2 id="example">Приклади</h2>
         <p>Це приклад тексту, <span class="highlight">виділеного</span> за допомогою CSS.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+           culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <section id="underwater">
+      <video  autoplay muted loop id="myVideo">
+        <source src="./underwater.mp4" type="video/mp4">
+        Ваш браузер не підтримує відео.
+      </video>
+      <div class="inner-box">
+        <div class="inner-wraper">
+          <h3>Океан</h3>
+          <p>Заворожуючий світ океану.</p>
+          <button id="myBtn" onclick="myFunction()">Пауза</button>
+        </div>
+      </div>
+    </section>
+    <section id="ocean">
+      <div class="ocean-img">
+        <img src="./ocean.jpeg" alt="океан">
+      </div>
+      <div class="ocean-content">
+        <p>
+          Тихий океан, найбільший у світі, він займає одну третину поверхні Землі. У Тихому океані знаходиться
+          приблизно 25 000 островів (більше, ніж загальна кількість в об’єднаних океанах решти світу), майже всі
+           з яких розташовані на південь від екватора. Тихий океан має площу близько 180 мільйонів кв. км.
+        </p>
+        <p>
+          Атлантичний океан володіє самою солоною водою з усіх океанів.Найбільший острів у світі Гренландія
+          знаходиться в Атлантичному океані. Найдальший острів у світі Буве також знаходиться в Атлантичному
+           океані.
+        </p>
+        <div>
+          <p>
+            Індійський океан володіє таким феноменальним явищем як» світяться кола”, поява яких навіть вчені не в
+            силах пояснити.Саме Індійський океан пов’язує всі найбільш значущі порти на планеті.
+          </p>
+          <p>
+            Вода океанів містить близько тридцяти мільярдів тонн срібла, а це в 45 тисяч разів більше, ніж його
+            видобули з 1492 року люди в усьому світі.
+          </p>
+
+        </div>
+        <p>
+          Великий бар’єрний риф – найбільше скупчення коралів, яке знаходиться в Тихому океані. Великий Бар’єрний
+          Риф, який простягнувся майже на 2500 км і займає більшу площу, ніж Країна Великобританія, є найбільш
+          населеною територією світу. Він є домом для 2000 видів риб, близько 4000 видів молюсків і неміряної
+          кількості безхребетних.
+        </p>
+      </div>
+
     </section>
 </main>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Пауза";
+  } else {
+    video.pause();
+    btn.innerHTML = "Грати";
+  }
+}
+</script>
 
 </body>
 </html>

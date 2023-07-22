@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Futura Light Italic font";
+  src: url("./fonts/Futura Light Italic font.ttf") format('truetype');
+}
+@font-face {
+  font-family:"Futura XBlk BT";
+  src: url("./fonts/Futura XBlk BT.ttf") format('truetype');
+}
+p {
+  font-family: "Futura Light Italic font",Arial, sans-serif;
+}
+
+.main-heading {
+  font-size: 2rem;
+}
+
+#example {
+  font-family:"Futura XBlk BT",sans-serif;
+  text-decoration: underline;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+section > h2 {
+  color: blue;
+}
+#myVideo {
+  width: 100%;
+}
+#underwater {
+  position: relative;
+}
+.inner-box {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.inner-wraper {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+#ocean {
+  margin-top: 30px;
+  border: 4px dashed blue;
+  padding: 20px;
+}
+
+#myBtn {
+  border: none;
+  background-color: lightblue;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+img {
+  width: 100%;
+}
+
+.inner-wraper h3 {
+  margin: 0;
+}
+
+.ocean-content p {
+  color: blue;
+}
+div + p {
+  background-color: yellow;
+}
+@media (max-width:768px) {
+  .inner-box {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+}
