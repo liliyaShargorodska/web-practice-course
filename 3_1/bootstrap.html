@@ -6,60 +6,194 @@
     <title>Моя веб-сторінка з Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-md bg-info-subtle mb-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Нова інформація</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Допомога</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Теми
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Рослини</a></li>
+                  <li><a class="dropdown-item" href="#">Тварини</a></li>
+                  <li><a class="dropdown-item" href="#">Люди</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" id="change">
+            <h2>Тварини</h2>
+            <p>
+              Твари́ни, Животи́ни (лат. Animalia або Metazoa) — царство переважно багатоклітинних еукаріотичних (ядерних)
+              організмів, однією з найголовніших ознак якого є гетеротрофність (тобто, споживання готових органічних речовин)
+              та здатність активно рухатись. До царства тварин не належать рослини та гриби — теж великі (але не єдині)
+              царства еукаріотів.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2>Рослини</h2>
+            <p>
+              Рослини — це організми, яким властиві живлення, розмноження, ріст і розвиток.Здатність рухатися — важлива ознака
+              всіх живих організмів. Не є винятком і рослини. Коли вони ростуть і розвиваються, вони рухаються, повертають своє
+               листя і квітки до сонця. Для живлення рослинам потрібні сонячне світло, повітря, вода і поживні речовини з ґрунту.
+               Рослина складається з частин, які називають органами. Кожен орган має свою назву: корінь, стебло, листок, квітка,
+               плід з насінням. Починати розгляд і називати органи рослини потрібно з кореня.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
       <div class="row">
-        <div class="col-md-6" id="change">
-          <h2>Тварини</h2>
-          <p>
-            Твари́ни, Животи́ни (лат. Animalia або Metazoa) — царство переважно багатоклітинних еукаріотичних (ядерних)
-            організмів, однією з найголовніших ознак якого є гетеротрофність (тобто, споживання готових органічних речовин)
-            та здатність активно рухатись. До царства тварин не належать рослини та гриби — теж великі (але не єдині)
-            царства еукаріотів.
-          </p>
+        <div class="col-md-6">
+          <h2>Стовпець 1</h2>
+          <button type="button" class="btn btn-primary" onclick="changeColor()">Натисніть мене</button>
         </div>
         <div class="col-md-6">
-          <h2>Рослини</h2>
-          <p>
-            Рослини — це організми, яким властиві живлення, розмноження, ріст і розвиток.Здатність рухатися — важлива ознака
-            всіх живих організмів. Не є винятком і рослини. Коли вони ростуть і розвиваються, вони рухаються, повертають своє
-             листя і квітки до сонця. Для живлення рослинам потрібні сонячне світло, повітря, вода і поживні речовини з ґрунту.
-             Рослина складається з частин, які називають органами. Кожен орган має свою назву: корінь, стебло, листок, квітка,
-             плід з насінням. Починати розгляд і називати органи рослини потрібно з кореня.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Стовпець 1</h2>
-        <button type="button" class="btn btn-primary" onclick="changeColor()">Натисніть мене</button>
-      </div>
-      <div class="col-md-6">
-        <h2>Стовпець 2</h2>
-        <div class="card">
-          <img src="./flovers.jpeg" class="card-img-top" alt="Карточка">
-          <div class="card-body">
-            <h5 class="card-title">Квіти</h5>
-            <p class="card-text">Оригінальні та прекрасні, квіти вражають нас своєю красою, ніжністю та неповторністю ароматів.
-              Мабуть, немає у світі людини, яка з впевненістю може сказати: я не люблю квітів. А як щодо Тебе?</p>
-            <a href="https://ukr.media/science/346273/" class="btn btn-secondary">Дізнатися більше</a>
+          <h2>Стовпець 2</h2>
+          <div class="card">
+            <img src="./flovers.jpeg" class="card-img-top" alt="Карточка">
+            <div class="card-body">
+              <h5 class="card-title">Квіти</h5>
+              <p class="card-text">Оригінальні та прекрасні, квіти вражають нас своєю красою, ніжністю та неповторністю ароматів.
+                Мабуть, немає у світі людини, яка з впевненістю може сказати: я не люблю квітів. А як щодо Тебе?</p>
+              <a href="https://ukr.media/science/346273/" class="btn btn-secondary">Дізнатися більше</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script>
-    function changeColor() {
-      const text = document.getElementById('change');
-      text.style.color = "blue";
-      setTimeout(function() {
-        text.style.color = "black";
-      },3000);
-    }
+    <article class="plants">
+      <div class="row mx-auto p-2">
+        <div class="col-12 text-align-center">
+          <h3 class="text-center text-info mt-3">Будова та життєдіяльність рослин. Основні процеси життєдіяльності рослин</h3>
+          <p>
+            <b>Живлення</b> — процес надходження в організм речовин, необхідних для підтримки життєдіяльності,
+            та їх засвоєння, це складова частина обміну речовин. Існують два типи живлення: автотрофний і
+            гетеротрофний. Автотрофне живлення — утворення (синтез) органічних речовин із неорганічних і за
+             використання, в основному, енергії сонячного випромінювання. У процесі синтезу органічної речовини
+             з неорганічних у рослин виділяється кисень. Частину його рослини використовують для дихання, а решта
+              газу потрапляє в атмосферу.
+          </p>
+          <p>
+            <b>Фотосинтез</b> — найголовніша функція листка. У листках відбуваються також важливі функції — дихання і
+            випаровування води (транспірація). При фотосинтезі з неорганічних сполук утворюються органічні за
+            рахунок засвоєння рослиною енергії світла.  Необхідною умовою фотосинтезу є наявність світла, води
+            та вуглекислого газу. Воду рослини отримують переважно з ґрунту, вуглекислий газ — із повітря.
+            Споживання рослинами вуглекислого газу з атмосфери називають повітряним живленням. Вуглець
+            вуглекислого газу є основою для утворення молекул органічних речовин. Під час фото-синтезу на світлі
+             рослини розкладають воду і виділяють з неї кисень. Інтенсивність фотосинтезу залежить від
+             освітленості, температури довкілля, кількості вуглекислого газу (в атмосфері його 0,03 %),
+             надходження води. Оптимальні умови для фотосинтезу — температура +20…25 °C та достатнє зволоження
+             ґрунту.
+          </p>
+          <p>
+            Взаємозв’язки частин рослинного організму. Функції рослинного організму — фотосинтез, дихання,
+             мінеральне живлення, транспорт води, органічних і неорганічних речовин, ріст і розвиток,
+             розмноження тощо — вивчає наука фізіологія рослин. Усі частини рослини тісно взаємопов’язані між
+              собою, доповнюють одна одну і становлять єдине ціле. Порушення будови чи функції будь-­якої з них
+               одразу ж відбивається на діяльності інших частин і організму в цілому. Ушкодження та відмирання
+               кореня не тільки порушить закріплення рослини в ґрунті, але й зробить неможливим поглинання нею
+               з ґрунту розчинів мінеральних речовин. Листок — орган, де у рослини утворюються органічні речовини,
+                без яких неможливий ріст клітин і тканин коренів і пагонів, а отже, організму в цілому. Разом з
+                 тим листок і стебло мають потребу в мінеральних розчинах, які надходять з кореня. Зв’язок між
+                 різними частинами рослини здійснює провідна тканина, яка пронизує весь організм — від кореня
+                 через стебло до клітин листка. Узгодження роботи органів здійснюється завдяки виробленню рослиною
+                 особливих сполук — фітогормонів. Фітогормони утворюються в одних клітинах і через провідну тканину
+                 потрапляють в інші, де виявля­ється їхня дія. Одні з них прискорюють поділ і ріст клітин, інші можуть
+                  гальмувати їх, тобто регулюють проростання насіння, бруньок, утворення квіток, плодів тощо.
+          </p>
 
+        </div>
+
+      </div>
+
+    </article>
+
+    </main>
+    <footer class="bg-info-subtle text-primary-emphasis mt-5 pb-4">
+      <div class="conteiner">
+        <div class="row mx-auto p-2">
+          <div class="col-12 col-md-3 col-lg-3 mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Загадковий світ</h5>
+            <p>Найбільш цікава інформація про природу і навколишній світ</p>
+          </div>
+          <div class="col-12 col-md-3 col-lg-3 mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Продукти</h5>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none">Провайдери</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none">Креативність</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none">Ресурси</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-3 col-lg-3 mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Корисні посилання</h5>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none">
+                <i class="fab fa-facebook-f"></i> Фейсбук</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none">
+                <i class="fab fa-instagram"></i> Інстаграм</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none">
+                <i class="fab fa-twitter"></i> Твітер</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-3 col-lg-3 mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Контакти</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i> Вінниця, 20000,Україна
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> 097-ХХХ-ХХ-ХХ
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> email@gmail.com
+            </p>
+          </div>
+          <hr class="mb-4">
+          <div class="row  text-center align-items-center">
+            <div class="col-12">
+              <p>
+                &copy; 2023 Загадковий світ. Всі права захищені.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="bootstrap.js">
   </script>
 
   </body>
