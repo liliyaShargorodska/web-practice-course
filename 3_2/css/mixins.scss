@@ -1,0 +1,17 @@
+@mixin links {
+  font-weight: bold;
+  text-decoration: none;
+  transition-duration: 2s;
+  &:hover {
+    color: $color-title;
+  }
+}
+@mixin button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition-property: opacity;
+  &:hover {
+    opacity: 0.5;
+  }
+}

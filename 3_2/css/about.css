@@ -1,0 +1,12 @@
+.about h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120px;
+  color: black;
+  padding-bottom: 47px;
+}
+.about__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
