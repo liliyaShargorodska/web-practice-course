@@ -1,41 +1,36 @@
 .header {
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 60px;
-  &__logo {
-    font-size: 38px;
-    color:$primary-color;
-    @include links;
-  }
-  li {
-    list-style: none;
-    padding-left: 27px;
-    padding-right: 27px;
-  }
-  a {
-    @include links;
-    color:$primary-color;
-  }
-  &__nav {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  &__menu {
-    display: flex;
-  }
-  &__search {
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/search.svg');
-    background-size: contain;
-    @include button;
-  }
-  &__cart {
-    margin-left: 40px;
-    &:hover path {
-      fill: $primary-color;
+    &__logo {
+        font-size: 38px;
+        color: $primary-color;
+        @include links;
     }
-
-  }
+    li {
+        list-style: none;
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+    a {
+        @include links;
+        color: $primary-color;
+    }
+    &__nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__menu {
+        display: flex;
+    }
+    &__search {
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/search.svg");
+        background-size: contain;
+        @include button;
+    }
+    &__cart {
+        margin-left: 40px;
+        &:hover path {
+            fill: $primary-color;
+        }
+    }
 }
