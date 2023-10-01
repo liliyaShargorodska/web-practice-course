@@ -1,18 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Grid Example</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="grid-container">
-      <header>Header</header>
-      <nav>Sidebar</nav>
-      <main>Main Content</main>
-      <aside>Aside Content</aside>
-      <footer>Footer</footer>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Grid Example</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                <a href="#" class="header-logo"></a>
+                <nav class="header-menu">
+                    <ul class="header-list">
+                        <li>
+                            <a href="#" class="header-link">menu</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-link">menu</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-link">menu</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-link">menu</a>
+                        </li>
+                    </ul>
+                    <div class="header-burger">
+                        <span></span>
+                    </div>
+                </nav>
+            </header>
+            <main class="main">
+                <aside class="sidebar">
+                    <nav class="sidebar-menu">
+                        <ul class="sidebar-list">
+                            <li>
+                                <a href="#" class="sidebar-link">menu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="sidebar-link">menu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="sidebar-link">menu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="sidebar-link">menu</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <section class="content">
+                    <h1 class="content-title">Grid layout practice</h1>
+                    <div class="content-gallery gallery">
+                        <h2 class="gallery-title">Gallery</h2>
+                        <div class="gallery-items">
+                            <div class="gallery-item gallery-item-big">
+                                <img src="./images/img1.jpeg" alt="nature" />
+                            </div>
+                            <div class="gallery-item">
+                                <img src="./images/img2.jpeg" alt="nature" />
+                            </div>
+                            <div class="gallery-item">
+                                <img src="./images/img3.jpeg" alt="nature" />
+                            </div>
+                            <div class="gallery-item">
+                                <img src="./images/img4.jpeg" alt="nature" />
+                            </div>
+                            <div class="gallery-item">
+                                <img src="./images/img5.jpeg" alt="nature" />
+                            </div>
+                            <div class="gallery-item">
+                                <img src="./images/img6.jpeg" alt="nature" />
+                            </div>
+                            <div class="gallery-item">
+                                <img src="./images/img7.jpeg" alt="nature" />
+                            </div>
+                            <div class="gallery-item gallery-item-big">
+                                <img src="./images/img8.jpeg" alt="nature" />
+                            </div>
+                            <div class="gallery-item">
+                                <img src="./images/img9.jpeg" alt="nature" />
+                            </div>
+                            <div class="gallery-item">
+                                <img src="./images/img10.jpeg" alt="nature" />
+                            </div>
+                        </div>
+                    </div>
+                    <section class="content-products products">
+                        <h2 class="products-title">Goods</h2>
+                        <div class="products-items">
+                            <div class="products-item">
+                                <a href="" class="products-img">
+                                    <img
+                                        src="./images/nectarine.jpeg"
+                                        alt="nectarine"
+                                    />
+                                </a>
+                                <a href="#" class="products-name">nectarine</a>
+                                <a href="#" class="products-btn">Buy</a>
+                            </div>
+                            <div class="products-item">
+                                <a href="" class="products-img">
+                                    <img
+                                        src="./images/apple.jpeg"
+                                        alt="apple"
+                                    />
+                                </a>
+                                <a href="#" class="products-name">apple</a>
+                                <a href="#" class="products-btn">Buy</a>
+                            </div>
+                            <div class="products-item">
+                                <a href="" class="products-img">
+                                    <img
+                                        src="./images/apricot.jpeg"
+                                        alt="apricot"
+                                    />
+                                </a>
+                                <a href="#" class="products-name">apricot</a>
+                                <a href="#" class="products-btn">Buy</a>
+                            </div>
+                            <div class="products-item">
+                                <a href="" class="products-img">
+                                    <img
+                                        src="./images/tommato.jpeg"
+                                        alt="tommato"
+                                    />
+                                </a>
+                                <a href="#" class="products-name">tommato</a>
+                                <a href="#" class="products-btn">Buy</a>
+                            </div>
+                            <div class="products-item">
+                                <a href="" class="products-img">
+                                    <img
+                                        src="./images/cucamber.jpeg"
+                                        alt="cucamber"
+                                    />
+                                </a>
+                                <a href="#" class="products-name">cucamber</a>
+                                <a href="#" class="products-btn">Buy</a>
+                            </div>
+                            <div class="products-item">
+                                <a href="" class="products-img">
+                                    <img
+                                        src="./images/salad.webp"
+                                        alt="salad"
+                                    />
+                                </a>
+                                <a href="#" class="products-name">salad</a>
+                                <a href="#" class="products-btn">Buy</a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer-copy">Copy,2023</div>
+                <div class="footer-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
