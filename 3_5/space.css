@@ -22,7 +22,6 @@ a:hover {
 }
 .navbar-nav {
     align-items: center;
-    justify-content: end;
 }
 .nav-link {
     color: rgb(114, 95, 235);
