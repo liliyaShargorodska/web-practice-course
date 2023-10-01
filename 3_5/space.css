@@ -1,93 +1,105 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: lightgray;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
 }
 
 h1 {
-  text-align: center;
-  padding: 30px;
+    text-align: center;
+    padding: 30px;
 }
 
 a {
-  font-size: 22px;
-  color: white;
-  text-decoration: none;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
 }
 
 a:hover {
-  color: aqua;
+    color: aqua;
+}
+.navbar-brand {
+    color: rgb(114, 95, 235);
+}
+.navbar-nav {
+    align-items: center;
+    justify-content: end;
+}
+.nav-link {
+    color: rgb(114, 95, 235);
 }
 
 .space {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .card-wrap {
-  display: flex;
-  height: 300px;
-  margin-bottom: 20px;
+    display: flex;
+    height: 300px;
+    margin-bottom: 20px;
 }
 
 .img-planet {
-  flex: 1;
-  height: 100%;
-  max-width: 50%;
-  display: flex;
-  justify-content: center;
+    flex: 1;
+    height: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .text-planet {
-  flex: 1;
-  max-width: 50%;
-  background-color: white;
+    flex: 1;
+    max-width: 50%;
+    background-color: white;
 }
 .text-planet h3 {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 
 .text-planet p {
-  line-height: 1.6;
-  text-align: justify;
-  padding: 10px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
 }
 footer {
-  background-color: grey;
-  padding: 1rem;
-  text-align: center;
-  color: #fff;
+    background-color: grey;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
 }
 
 @media (max-width: 600px) {
-  .space {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: baseline;
-  }
-  .item {
-    margin-bottom: 20px;
-  }
-  .card-wrap {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .img-planet,
-  .text-planet {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-  }
+    .space {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: baseline;
+    }
+    .item {
+        margin-bottom: 20px;
+    }
+    .card-wrap {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .img-planet,
+    .text-planet {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 768px) {
 }
